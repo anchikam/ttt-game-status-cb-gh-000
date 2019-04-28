@@ -43,7 +43,9 @@ def won?(board)
     win = (xwin || owin)
     if win
       return win_combination # return the win_combination indexes that won.
-    elsif full?(board) && !win
+    elsif full?(board) 
+      return false
+    else
       return false
     end
   end
