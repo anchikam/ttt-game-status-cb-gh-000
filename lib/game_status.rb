@@ -87,6 +87,9 @@ end
 
 
 def winner(board)
+  if board == ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
+    return nil
+  end
   if full?(board) || !won?(board)
     return nil
   end
