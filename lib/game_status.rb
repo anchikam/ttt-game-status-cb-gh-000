@@ -76,10 +76,10 @@ end
 
 
 def winner(board)
-  win_combination = won?(board)
   if draw?(board)
     return nil
-  elsif win_combination[0] == "X"
+  win_combination = won?(board)
+  if win_combination[0] == "X"
     return "X"
   elsif win_combination[0] == "O"
     return "O"
