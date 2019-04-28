@@ -15,7 +15,18 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
+def empty?(board)
+  eboard = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  if board == eboard
+    return true
+  end
+end
+
 def won?(board)
+  if empty?(board)
+    return falsey
+  end
+
   for win_combination in WIN_COMBINATIONS
     # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
     # grab each index from the win_combination that composes a win.
