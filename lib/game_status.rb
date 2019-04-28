@@ -78,6 +78,7 @@ end
 def winner(board)
   if draw?(board)
     return nil
+  end
   win_combination = won?(board)
   if win_combination[0] == "X"
     return "X"
