@@ -50,7 +50,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.size.times do |index|
+  9.times do |index|
     if !position_taken?(board, index)
       return false
     end
