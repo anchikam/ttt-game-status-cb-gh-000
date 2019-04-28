@@ -87,7 +87,7 @@ end
 
 
 def winner(board)
-  if draw?(board) || !won?(board)
+  if full?(board) || !won?(board)
     return nil
   end
   win_combination = won?(board)
