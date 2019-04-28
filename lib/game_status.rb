@@ -53,10 +53,9 @@ def full?(board)
   9.times do |index|
     if !position_taken?(board, index)
       return false
-    else
-      return true
     end
   end
+  return true
 end
 
 def draw?(board)
