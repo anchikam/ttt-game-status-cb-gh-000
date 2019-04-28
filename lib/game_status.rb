@@ -64,13 +64,12 @@ def draw?(board)
   # end
   if won?(board)
     return false
-  else
-    if full?(board)
-      return true
-    else !full?(board)
-      return false
-    end
   end
+
+  if full?(board)
+    return true
+  end
+
 end
 
 
