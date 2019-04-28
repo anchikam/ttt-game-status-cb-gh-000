@@ -24,7 +24,7 @@ end
 
 def won?(board)
   if empty?(board)
-    return falsey
+    return false
   end
 
   for win_combination in WIN_COMBINATIONS
